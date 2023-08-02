@@ -1,12 +1,12 @@
 "use client"
-import { Button } from 'primereact/button';
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Button>Submit</Button>
+      <Sidebar />
     </>
   )
 }
