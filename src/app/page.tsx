@@ -1,12 +1,10 @@
 "use client"
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import MainTopFilter from "./components/MainTopFilter";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
+      <MainTopFilter/>
     </>
   )
 }

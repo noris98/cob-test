@@ -9,7 +9,7 @@ export default function Sidebar() {
     {label: 'Alertas', icon: 'pi pi-fw pi-bell'},
     {label: 'Mensajes', icon: 'pi pi-fw pi-folder'},
     {label: 'Administradores', icon: 'pi pi-fw pi-user-plus'},
-    {label: 'Informacion Util', icon: 'pi pi-fw pi-info-circle'},
+    {label: 'Informacion util', icon: 'pi pi-fw pi-info-circle'},
     {label: 'Pagos por App', icon: 'pi pi-fw pi-dollar'},
     {label: 'Configuracion', icon: 'pi pi-fw pi-cog'}
   ];

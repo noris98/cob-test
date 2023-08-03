@@ -1,9 +1,12 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import "primereact/resources/themes/lara-light-indigo/theme.css"
 import "primereact/resources/primereact.min.css"
 import 'primeicons/primeicons.css'
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        <div className="container">
+          <Sidebar />
+          <div className='main-content'>
+          {children}
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
