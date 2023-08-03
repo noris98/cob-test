@@ -1,16 +1,25 @@
+body {
+  margin: 0px;
+}
+
 .navbar-top {
   background-color: white;
   height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 999;
 }
 
 .navbar-logo {
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding-left: 25px;
 }
 
 .navbar-logo .title-logo {
@@ -20,29 +29,48 @@
 
 .user-info {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .user-data {
+  margin: 0px 5px 15px 0px;
+}
+
+.user-data h3 {
+  font-size: 14px;
+}
+
+.user-data-exit {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-data-exit i {
+  font-size: 10px;
+  margin-left: 10px;
+  padding-top: 2px;
+}
+
+.user-data-exit span {
+  font-size: 12px;
 }
 
 .user-logo {
-  border-radius: 50%;
-}
-
-body {
-  margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
   background-color: white;
   width: 300px;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
   padding: 50px 0px 0px 25px;
-  height: 100vh;
+  border-bottom-right-radius: 5%;
 }
 
 .p-menu {

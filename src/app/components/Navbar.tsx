@@ -1,7 +1,12 @@
 import Image from 'next/image'
 
+const imageStyle = {
+  borderRadius: '50%',
+  border: '1px solid #fff',
+}
+
 export default function Navbar() {
-  return(
+  return (
     <div className="navbar-top">
       <div className="navbar-logo">
         <Image
@@ -15,14 +20,18 @@ export default function Navbar() {
       <div className="user-info">
         <div className="user-data">
           <h3>Benjamin Lopez</h3>
-          <span><i className="pi pi-sign-out" style={{ fontSize: '1rem' }}></i>Cerrar Sesion</span>
+          <div className='user-data-exit'>
+            <i className="pi pi-sign-out"></i>
+            <span>Cerrar Sesion</span>
+          </div>
         </div>
         <div className="user-logo">
           <Image
             src="/user.jpg"
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt="Picture of the author"
+            style={imageStyle}
           />
         </div>
       </div>
